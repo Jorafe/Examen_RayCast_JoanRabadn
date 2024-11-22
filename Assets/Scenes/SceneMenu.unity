@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -243,7 +242,7 @@ GameObject:
   - component: {fileID: 437837513}
   m_Layer: 0
   m_Name: Sphere
-  m_TagString: Untagged
+  m_TagString: Esfera 1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -328,7 +327,7 @@ Transform:
   m_GameObject: {fileID: 437837512}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 191.7, y: 2.6, z: 33.1}
+  m_LocalPosition: {x: 191.7, y: 3.68, z: 29.58}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -361,16 +360,16 @@ RectTransform:
   m_GameObject: {fileID: 454488270}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.7602332, y: 1.7602332, z: 1.7602332}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1903658422}
   m_Father: {fileID: 619158930}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -81, y: -42}
-  m_SizeDelta: {x: 107.0626, y: 63.3999}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -98}
+  m_SizeDelta: {x: 107.06262, y: 63.3999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &454488272
 MonoBehaviour:
@@ -621,7 +620,7 @@ GameObject:
   - component: {fileID: 810289033}
   m_Layer: 0
   m_Name: Cube2
-  m_TagString: Untagged
+  m_TagString: Cubo 2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -718,7 +717,7 @@ Transform:
   m_GameObject: {fileID: 810289032}
   serializedVersion: 2
   m_LocalRotation: {x: 0.6007739, y: -0, z: -0, w: 0.79941905}
-  m_LocalPosition: {x: 191.8, y: 2.5, z: 27.9}
+  m_LocalPosition: {x: 199.31, y: 2.5, z: 27.9}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -735,6 +734,7 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
+  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -810,12 +810,25 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0.1855421, y: -0, z: -0, w: 0.98263633}
-  m_LocalPosition: {x: 189, y: 5, z: 24}
+  m_LocalPosition: {x: 192.48, y: 8.31, z: 18.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 21.385, y: 0, z: 0}
+--- !u!114 &963194229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e71170028d0f39e48a32cf4fe0f44938, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  countdownText: {fileID: 1903658423}
 --- !u!1 &1789875282
 GameObject:
   m_ObjectHideFlags: 0
@@ -831,7 +844,7 @@ GameObject:
   - component: {fileID: 1789875283}
   m_Layer: 0
   m_Name: Cube1
-  m_TagString: Untagged
+  m_TagString: Cubo 1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1062,17 +1075,17 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
-    m_FontStyle: 1
+    m_FontStyle: 3
     m_BestFit: 1
     m_MinSize: 10
-    m_MaxSize: 40
+    m_MaxSize: 141
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 5
+  m_Text: Click
 --- !u!222 &1903658424
 CanvasRenderer:
   m_ObjectHideFlags: 0
